@@ -1,0 +1,10 @@
+<h1>Edit your profile</h1>
+
+{{!-- TODO: chnage the user  ID part --}}
+<p>username: {{user.name}}</p>
+<p>userid: {{user._id}}</p>
+<form action="/profile/edit" method="POST">
+  <textarea name="name" placeholder="new name">{{ user.name }}</textarea>
+  {{!-- <input name="text" value={{post.text}} /> --}}
+  <button>Edit NOW</button>
+</form>
